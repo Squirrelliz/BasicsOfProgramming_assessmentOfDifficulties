@@ -5,6 +5,7 @@ timeOfSort/CMakeFiles/timeOfSort.dir/generating.c.obj: \
  ../timeOfSort/generating.c \
  ../timeOfSort/generating.h
 timeOfSort/CMakeFiles/timeOfSort.dir/sort.c.obj: \
+ ../algorithms.h \
  ../timeOfSort/sort.c \
  ../timeOfSort/sort.h
 timeOfSort/CMakeFiles/timeOfSort.dir/timeOfSort.c.obj: \

@@ -140,17 +140,6 @@ int binarySearchEqualOrMore(const int *a, const int n, const int x) {
     return right;
 }
 
-void insertionSort(int *a, const size_t size) {
-    for (size_t i = 1; i < size; i++) {
-        int t = a[i];
-        int j = i;
-        while (j > 0 && a[j - 1] > t) {
-            a[j] = a[j - 1];
-            j--;
-        }
-        a[j] = t;
-    }
-}
 
 long long getSum(int *a, int n) {
     long long sum = 0;
@@ -263,4 +252,15 @@ int cmp_char(const void *pa, const void *pb) {
     if (arg1 > arg2) return 1;
     return 0;
 
+}
+
+void getMinMax(const int *a, size_t size, int *min, int *max) {
+    *min = a[0];
+    *max = a[0];
+    for (int i = 1; i < size; i++) {
+        if (a[i] < *min)
+            *min = a[i];
+        else if (a[i] > *max)
+            *max = a[i];
+    }
 }

@@ -8,14 +8,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <memory.h>
+#include "../algorithms.h"
 
-void inputArray_(int *const a, const size_t n);
-
-void outputArray_(const int *const a, const size_t n);
-
-void swap(int a, int b);
-
-void getMinMax(const int *a, size_t size, int *min, int *max);
 
 //обменная сортировка
 void bubbleSort(int *a, size_t size);

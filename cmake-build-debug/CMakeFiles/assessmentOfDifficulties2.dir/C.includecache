@@ -6,11 +6,31 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/lizka/CLionProjects/assessmentOfDifficulties2/algorithms.h
+stdio.h
+-
+stdlib.h
+-
+stdbool.h
+-
+math.h
+-
+
 C:/Users/lizka/CLionProjects/assessmentOfDifficulties2/main.c
 stdio.h
 -
 timeOfSort/sort.h
 C:/Users/lizka/CLionProjects/assessmentOfDifficulties2/timeOfSort/sort.h
+timeOfSort/timeOfSort.h
+C:/Users/lizka/CLionProjects/assessmentOfDifficulties2/timeOfSort/timeOfSort.h
+
+C:/Users/lizka/CLionProjects/assessmentOfDifficulties2/timeOfSort/generating.h
+stdio.h
+-
+stdlib.h
+-
+time.h
+-
 
 C:/Users/lizka/CLionProjects/assessmentOfDifficulties2/timeOfSort/sort.h
 stdio.h
@@ -19,4 +39,22 @@ stdlib.h
 -
 memory.h
 -
+../algorithms.h
+C:/Users/lizka/CLionProjects/assessmentOfDifficulties2/algorithms.h
+
+C:/Users/lizka/CLionProjects/assessmentOfDifficulties2/timeOfSort/timeOfSort.h
+stdlib.h
+-
+stdio.h
+-
+stdbool.h
+-
+time.h
+-
+sort.h
+C:/Users/lizka/CLionProjects/assessmentOfDifficulties2/timeOfSort/sort.h
+generating.h
+C:/Users/lizka/CLionProjects/assessmentOfDifficulties2/timeOfSort/generating.h
+../algorithms.h
+C:/Users/lizka/CLionProjects/assessmentOfDifficulties2/algorithms.h
 

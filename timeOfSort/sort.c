@@ -4,28 +4,6 @@
 
 #include "sort.h"
 
-void inputArray_(int *const a, const size_t n) {
-    for (size_t i = 0; i < n; i++)
-        scanf("%d", &a[i]);
-}
-
-void outputArray_(const int *const a, const size_t n) {
-    for (size_t i = 0; i < n; i++)
-        printf("%d ", a[i]);
-    printf("\n");
-}
-
-void getMinMax(const int *a, size_t size, int *min, int *max) {
-    *min = a[0];
-    *max = a[0];
-    for (int i = 1; i < size; i++) {
-        if (a[i] < *min)
-            *min = a[i];
-        else if (a[i] > *max)
-            *max = a[i];
-    }
-}
-
 void bubbleSort(int *a, size_t size) {
     for (size_t i = 0; i < size - 1; i++)
         for (size_t j = size - 1; j > i; j--)

@@ -37,8 +37,6 @@ int binarySearchEqualOrMore(const int *a, const int n, const int x);
 
 bool isOrdered(const int *a, size_t n);
 
-void insertionSort(int *a, const size_t size);
-
 long long getSum(int *a, int n);
 
 int getMax(int *a, int n);
@@ -66,4 +64,7 @@ bool isEqualOrLess(const int *a, const size_t n, const int x);
 void inputArray(int *a, const size_t n);
 
 int cmp_char(const void *pa, const void *pb);
+
+void getMinMax(const int *a, size_t size, int *min, int *max);
+
 #endif //ASSESSMENTOFDIFFICULTIES2_ALGORITHMS_H
