@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/lizka/CLionProjects/assessmentOfDifficulties2/main.c
+stdio.h
+-
+timeOfSort/sort.h
+C:/Users/lizka/CLionProjects/assessmentOfDifficulties2/timeOfSort/sort.h
+
+C:/Users/lizka/CLionProjects/assessmentOfDifficulties2/timeOfSort/sort.h
+stdio.h
+-
+stdlib.h
+-
+memory.h
+-
+

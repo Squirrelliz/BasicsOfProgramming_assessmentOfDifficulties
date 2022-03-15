@@ -1,0 +1,6 @@
+C:/Users/lizka/CLionProjects/assessmentOfDifficulties2/cmake-build-debug/CMakeFiles/assessmentOfDifficulties2.dir
+C:/Users/lizka/CLionProjects/assessmentOfDifficulties2/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/lizka/CLionProjects/assessmentOfDifficulties2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/lizka/CLionProjects/assessmentOfDifficulties2/cmake-build-debug/timeOfSort/CMakeFiles/timeOfSort.dir
+C:/Users/lizka/CLionProjects/assessmentOfDifficulties2/cmake-build-debug/timeOfSort/CMakeFiles/edit_cache.dir
+C:/Users/lizka/CLionProjects/assessmentOfDifficulties2/cmake-build-debug/timeOfSort/CMakeFiles/rebuild_cache.dir
