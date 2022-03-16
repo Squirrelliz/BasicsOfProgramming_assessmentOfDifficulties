@@ -1,8 +1,7 @@
-#include <stdio.h>
-#include "timeOfSort/sort.h"
 #include "timeOfSort/timeOfSort.h"
 
-int main () {
-    timeExperiment ();
+int main() {
+    timeExperiment();
+    nCompExperiment();
     return 0;
 }

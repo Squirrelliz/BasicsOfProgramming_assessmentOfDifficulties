@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/lizka/CLionProjects/assessmentOfDifficulties2/algorithms.c
+algorithms.h
+C:/Users/lizka/CLionProjects/assessmentOfDifficulties2/algorithms.h
+assert.h
+-
+
 C:/Users/lizka/CLionProjects/assessmentOfDifficulties2/algorithms.h
 stdio.h
 -
@@ -17,10 +23,6 @@ math.h
 -
 
 C:/Users/lizka/CLionProjects/assessmentOfDifficulties2/main.c
-stdio.h
--
-timeOfSort/sort.h
-C:/Users/lizka/CLionProjects/assessmentOfDifficulties2/timeOfSort/sort.h
 timeOfSort/timeOfSort.h
 C:/Users/lizka/CLionProjects/assessmentOfDifficulties2/timeOfSort/timeOfSort.h
 

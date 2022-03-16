@@ -31,6 +31,12 @@ typedef struct SortFunc {
     char name[64];
 } SortFunc;
 
+typedef struct SortFuncNComp {
+    long long (*sort )(int *a, size_t n);
+
+    char name[64];
+} SortFuncNComp;
+
 typedef struct GeneratingFunc {
     void (*generate )(int *a, size_t n);
 
@@ -43,5 +49,9 @@ void checkTime(void (*sortFunc )(int *, size_t),
 
 void timeExperiment();
 
+void checkNComp(long long (*sortFunc)(int *, size_t), void (*generateFunc)(int *, size_t), size_t size,
+                char *experimentName);
+
+void nCompExperiment();
 
 #endif //ASSESSMENTOFDIFFICULTIES2_TIMEOFSORT_H

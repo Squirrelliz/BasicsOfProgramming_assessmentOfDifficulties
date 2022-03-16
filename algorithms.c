@@ -264,3 +264,13 @@ void getMinMax(const int *a, size_t size, int *min, int *max) {
             *max = a[i];
     }
 }
+
+void getPrefixSum(int *a, size_t size) {
+    int prev = a[0];
+    *a = 0;
+    for (int i = 1; i < size; i++) {
+        int t = a[i];
+        a[i] = prev + a[i - 1];
+        prev = t;
+    }
+}

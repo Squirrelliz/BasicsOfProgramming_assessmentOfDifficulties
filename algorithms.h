@@ -4,6 +4,7 @@
 
 #ifndef ASSESSMENTOFDIFFICULTIES2_ALGORITHMS_H
 #define ASSESSMENTOFDIFFICULTIES2_ALGORITHMS_H
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
@@ -66,5 +67,7 @@ void inputArray(int *a, const size_t n);
 int cmp_char(const void *pa, const void *pb);
 
 void getMinMax(const int *a, size_t size, int *min, int *max);
+
+void getPrefixSum(int *a, size_t size);
 
 #endif //ASSESSMENTOFDIFFICULTIES2_ALGORITHMS_H
