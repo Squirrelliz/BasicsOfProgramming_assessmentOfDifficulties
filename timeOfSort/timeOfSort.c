@@ -8,7 +8,7 @@ void
 checkTime(void (*sortFunc)(int *, size_t), void (*generateFunc)(int *, size_t), size_t size, char *experimentName) {
     static size_t runCounter = 1;
 
-    static int innerBuffer[100000];
+    static int innerBuffer[10000000];
     generateFunc(innerBuffer, size);
     printf("Run #%zu| ", runCounter++);
     printf(" Name : %s\n", experimentName);
@@ -44,9 +44,9 @@ checkTime(void (*sortFunc)(int *, size_t), void (*generateFunc)(int *, size_t), 
 
 void timeExperiment() {
     SortFunc sorts[] = {
-            {bubbleSort,    " bubbleSort "},
-            {insertionSort, " insertionSort "},
-            {selectionSort, " selectionSort "},
+            //{bubbleSort,    " bubbleSort "},
+            //{insertionSort, " insertionSort "},
+            //{selectionSort, " selectionSort "},
             {combsort,      " combsort "},
             {shellSort,     " shellSort "},
             {radixSort,     " radixSort "}
@@ -55,13 +55,13 @@ void timeExperiment() {
     const unsigned FUNCS_N = ARRAY_SIZE (sorts);
 
     GeneratingFunc generatingFuncs[] = {
-            {generateRandomArray,      " random "},
-            {generateOrderedArray,     " ordered "},
+            {generateRandomArray, " random "},
+            //{generateOrderedArray, " ordered "},
             {generateOrderedBackwards, " orderedBackwards "}
     };
     const unsigned CASES_N = ARRAY_SIZE(generatingFuncs);
 
-    for (size_t size = 10000; size <= 100000; size += 10000) {
+    for (size_t size = 1000000; size <= 10000000; size += 1000000) {
         printf(" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\n");
         printf(" Size : %d\n", size);
         for (int i = 0; i < FUNCS_N; i++) {
@@ -83,7 +83,7 @@ void checkNComp(long long int (*sortFunc)(int *, size_t), void (*generateFunc)(i
                 char *experimentName) {
     static size_t runCounter = 1;
 
-    static int innerBuffer[100000];
+    static int innerBuffer[10000000];
     generateFunc(innerBuffer, size);
     printf("Run #%zu| ", runCounter++);
     printf(" Name : %s\n", experimentName);
@@ -115,9 +115,9 @@ void checkNComp(long long int (*sortFunc)(int *, size_t), void (*generateFunc)(i
 
 void nCompExperiment() {
     SortFuncNComp sorts[] = {
-            {getBubbleSortNComp,    " getBubbleSortNComp "},
-            {getInsertionSortNComp, " getInsertionSortNComp "},
-            {getSelectionSortNComp, " getSelectionSortNComp "},
+            //{getBubbleSortNComp,    " getBubbleSortNComp "},
+            //{getInsertionSortNComp, " getInsertionSortNComp "},
+            //{getSelectionSortNComp, " getSelectionSortNComp "},
             {getCombsortNComp,      " getCombsortNComp "},
             {getShellSortNComp,     " getShellSortNComp "},
             {getRadixSortNComp,     " getRadixSortNComp "}
@@ -126,13 +126,13 @@ void nCompExperiment() {
     const unsigned FUNCS_N = ARRAY_SIZE (sorts);
 
     GeneratingFunc generatingFuncs[] = {
-            {generateRandomArray,      " random "},
-            {generateOrderedArray,     " ordered "},
+            {generateRandomArray, " random "},
+            //{generateOrderedArray, " ordered "},
             {generateOrderedBackwards, " orderedBackwards "}
     };
     const unsigned CASES_N = ARRAY_SIZE(generatingFuncs);
 
-    for (size_t size = 10000; size <= 100000; size += 10000) {
+    for (size_t size = 1000000; size <= 10000000; size += 1000000) {
         printf(" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\n");
         printf(" Size : %d\n", size);
         for (int i = 0; i < FUNCS_N; i++) {
